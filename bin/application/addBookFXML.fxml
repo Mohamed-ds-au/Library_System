@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controlAddBook">
+   <children>
+      <Label layoutX="331.0" layoutY="27.0" text="Add a new book to our library!">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="73.0" text="Book Title" />
+      <Label layoutX="344.0" layoutY="109.0" text="ISBN" />
+      <Label layoutX="339.0" layoutY="148.0" text="Author" />
+      <Label layoutX="341.0" layoutY="191.0" text="Genre" />
+      <Label layoutX="318.0" layoutY="231.0" text="Year Published" />
+      <Label layoutX="328.0" layoutY="273.0" text="Availability" />
+      <TextField fx:id="title1" layoutX="429.0" layoutY="69.0" />
+      <TextField fx:id="isbn1" layoutX="429.0" layoutY="105.0" />
+      <TextField fx:id="author1" layoutX="429.0" layoutY="144.0" />
+      <TextField fx:id="genere1" layoutX="429.0" layoutY="187.0" />
+      <TextField fx:id="year1" layoutX="429.0" layoutY="227.0" />
+      <TextField fx:id="ava" layoutX="429.0" layoutY="269.0" />
+      <Button layoutX="476.0" layoutY="333.0" mnemonicParsing="false" onAction="#addBook" prefHeight="25.0" prefWidth="79.0" text="Add Book" />
+      <ImageView fitHeight="400.0" fitWidth="285.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/25_Library_Patrons_Depicted_In_Works_Of_Art_-_BOOKGLOW.jpeg" />
+         </image>
+      </ImageView>
+      <Button layoutX="342.0" layoutY="333.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="79.0" text="Back" />
+   </children>
+</AnchorPane>

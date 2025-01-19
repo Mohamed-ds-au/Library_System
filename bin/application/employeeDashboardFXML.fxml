@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="396.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controlEmpDash">
+   <children>
+      <ImageView fitHeight="402.0" fitWidth="290.0" layoutX="-25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/25_Library_Patrons_Depicted_In_Works_Of_Art_-_BOOKGLOW.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="286.0" layoutY="27.0" text="Welcome, pal!" textFill="#ae9c78">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="79.0" text="Please choose what do you want to do." />
+      <Button layoutX="283.0" layoutY="128.0" mnemonicParsing="false" onAction="#manageBooks" text="Manage Books" />
+      <Button layoutX="281.0" layoutY="188.0" mnemonicParsing="false" text="View Borrowed Books" />
+      <Button layoutX="281.0" layoutY="243.0" mnemonicParsing="false" text="Manage Members" />
+      <Button layoutX="286.0" layoutY="338.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #ae9c78;" text="Logout" textFill="WHITE" />
+   </children>
+</AnchorPane>
